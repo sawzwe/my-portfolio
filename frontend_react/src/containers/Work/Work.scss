@@ -190,5 +190,20 @@
     .app__work-description--expanded {
         -webkit-line-clamp: unset;
       }      
+      
+  }
+  button {
+    border: none;
+    background-color: transparent;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  button:hover {
+    color: var(--secondary-color);
   }
   

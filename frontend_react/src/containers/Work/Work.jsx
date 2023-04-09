@@ -114,15 +114,15 @@ const Work = () => {
               </motion.div>
             </div>
 
-            <div className="app__work-content app__flex">
+            {/* <div className="app__work-content app__flex">
               <h4 className="bold-text">{work.title}</h4>
               <p className="p-text" style={{ marginTop: 10 }}>{work.description}</p>
               <div className="app__work-tag app__flex">
                 <p className="p-text">{work.tags[0]}</p>
               </div>
-            </div>
+            </div> */}
 
-            {/* <div className="app__work-content app__flex">
+            <div className="app__work-content app__flex">
               <h4 className="bold-text">{work.title}</h4>
               <p
                 className={`p-text app__work-description ${
@@ -140,7 +140,7 @@ const Work = () => {
               <div className="app__work-tag app__flex">
                 <p className="p-text">{work.tags[0]}</p>
               </div>
-            </div> */}
+            </div>
             {/* <div className="app__work-card">
               <div className="app__work-img-container">
                 <img
