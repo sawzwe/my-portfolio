@@ -35,6 +35,10 @@ const Footer = () => {
       .catch((err) => console.log(err));
   };
 
+  // const handleResume = () => {
+  //   window.open('https://drive.google.com/file/d/1mMaqOGCSwN5ywwGF_tQmX21Gp9gnqBBp/view?usp=sharing', '_blank');
+  // };
+
   return (
     <>
       <h2 className="head-text">Contact Info</h2>
@@ -67,6 +71,7 @@ const Footer = () => {
             />
           </div>
           <button type="button" className="p-text" onClick={handleSubmit}>{!loading ? 'Send Message' : 'Sending...'}</button>
+          {/* <button type="button" className="p-text" onClick={handleResume}>Resume</button> */}
         </div>
       ) : (
         <div>

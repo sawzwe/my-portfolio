@@ -8,16 +8,27 @@ import './Navbar.scss';
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
+  const handleResume = () => {
+    window.open('https://drive.google.com/file/d/1mMaqOGCSwN5ywwGF_tQmX21Gp9gnqBBp/view?usp=sharing', '_blank');
+    setToggle(false);
+  };
+
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
         {/* <img src={images.logo} alt="logo" /> */}
       </div>
       <ul className="app__navbar-links">
-        {['home', 'about', 'work', 'skills', 'contact','Resume'].map((item) => (
+        {['home', 'about', 'work', 'skills', 'contact', 'resume'].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
             <div />
-            <a href={`#${item}`}>{item}</a>
+            {item === 'resume' ? (
+              <a href="#resume" onClick={handleResume}>
+                {item}
+              </a>
+            ) : (
+              <a href={`#${item}`}>{item}</a>
+            )}
           </li>
         ))}
       </ul>
@@ -32,11 +43,17 @@ const Navbar = () => {
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>
-              {['home', 'about', 'work', 'skills', 'contact','Resume'].map((item) => (
+              {['home', 'about', 'work', 'skills', 'contact', 'resume'].map((item) => (
                 <li key={item}>
-                  <a href={`#${item}`} onClick={() => setToggle(false)}>
-                    {item}
-                  </a>
+                  {item === 'resume' ? (
+                    <a href="#resume" onClick={handleResume}>
+                      {item}
+                    </a>
+                  ) : (
+                    <a href={`#${item}`} onClick={() => setToggle(false)}>
+                      {item}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
