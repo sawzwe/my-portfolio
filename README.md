@@ -5,4 +5,4 @@ This is the first portfolio I will be doing after having decent knowledge and ba
 ## Backend 
   - Sanity
 ## Frontend
-  - Vite React
+  - Vite React Sass
