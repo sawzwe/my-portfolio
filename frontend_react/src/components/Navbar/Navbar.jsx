@@ -9,7 +9,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   const handleResume = () => {
-    window.open('https://drive.google.com/file/d/1mMaqOGCSwN5ywwGF_tQmX21Gp9gnqBBp/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1WTv8OBhxtMZqx3iLNfeKpVrAAOFKPErY/view', '_blank');
     setToggle(false);
   };
 
