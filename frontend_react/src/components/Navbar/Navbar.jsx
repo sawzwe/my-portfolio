@@ -10,7 +10,7 @@ const Navbar = () => {
 
   const handleResume = () => {
     // window.open('https://drive.google.com/file/d/1WTv8OBhxtMZqx3iLNfeKpVrAAOFKPErY/view', '_blank');
-    window.open('https://drive.google.com/file/d/1BO_YpnssicSLkrKILfawOQOWTkzmSVOV/view', '_blank');
+    window.open('https://drive.google.com/file/d/1ujATL6tNXO4aCP4qFWafrXfd_xcJYJ4h/view', '_blank');
     setToggle(false);
   };
 
